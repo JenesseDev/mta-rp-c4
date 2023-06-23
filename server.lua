@@ -14,7 +14,7 @@ function plantmine(thePlayer, cmd, quantity)
 			end
 		end
 		local c4 = createObject(363,x,y,z-0.5)
-		exports.arp_global:applyAnimation(thePlayer, "bomber", "bom_plant", -1, true, true, false)
+		exports.global:applyAnimation(thePlayer, "bomber", "bom_plant", -1, true, true, false)
 		setTimer(function()
 			local x1,y1,z1 = getElementPosition(c4)
 			destroyElement(c4)
